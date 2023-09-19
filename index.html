@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Universe Hub</title>
+    <!-- BS link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+    <!-- font awesome  -->
+    <script
+      src="https://kit.fontawesome.com/19dc23305c.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body onload="cardsData()">
+    <header>
+      <div class="container">
+        <h1 class="text-center mt-4 fw-semibold">AI Universe Hub</h1>
+        <div class="text-center my-2">
+          <button type="button" class="btn btn-danger p-2 fw-semibold">
+            Sort By Date
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mt-4">
+      <!-- card section  -->
+      <section>
+        <div
+          id="cards-container"
+          class="row row-cols-1 row-cols-md-3 g-4"></div>
+      </section>
+      <!-- show all button  -->
+      <div id="show-all" class="text-center my-4">
+        <div onclick="showAllCard()" class="btn btn-danger p-2 fw-semibold">
+          See More
+        </div>
+      </div>
+      <!-- Modal section  -->
+      <!-- Modal -->
+      <section class="container">
+
+      </section>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">             
+            </div>
+            <div class="modal-body d-flex p-4 justify-content-between gap-4">
+                <!-- card 1  -->
+                <div class="card bg-danger-subtle p-4 " style="height: 75%; width: 75%; ">
+                    <div class="card-body">
+                      <!-- description  -->
+                        <h5 id="description" class="card-title">Card title</h5>
+                        <!-- pricing  -->
+                        <div class="d-flex gap-4">
+                          <li id="month-basic"></li>
+                          <li id="month-pro"></li>
+                          <li id="month-enterprice"></li>
+                        </div>
+                        <!-- feature and integration  -->
+                        <div class="d-flex">
+                          <!-- feature  -->
+                          <div class="mt-4">
+                            <h5>Feature Name</h5>
+                            <ul>
+                              <li id="li-I"></li>
+                              <li id="li-II"></li>
+                              <li id="li-III"></li>
+                            </ul>
+                          </div>
+                          <!-- integration  -->
+                          <div class="mt-4">
+                            <h5>Integration</h5>
+                            <div id="integrations">
+                          </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2  -->
+                <div class="card" style="width:100%; height: 100%;">
+                  <div id="image">
+                    
+                  </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- bootstrap link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <!-- Script link  -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
